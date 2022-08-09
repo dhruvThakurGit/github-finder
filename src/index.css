@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backHome{
+    /* background-color: rgb(97,97,97); */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.userItem{
+    box-shadow: 0.3px 0.3px 0.3px 0px rgb(173, 173, 114);
+    padding: 1rem;
+}
+
+.custom-card-image .card.image-full::before{
+    border-radius: 0.5rem;
+    opacity: 0.45;
 }
